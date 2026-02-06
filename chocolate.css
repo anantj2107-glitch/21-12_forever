@@ -1,0 +1,102 @@
+/* ===== Page Background ===== */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("chocolate_pg2.jpg");
+  background-size: auto;     
+  background-position: center;  
+  overflow: hidden;
+}
+
+
+/* ===== Layout ===== */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* ===== Title ===== */
+.title {
+  font-size: 3rem;
+  color: #6b3e26;
+  margin-bottom: 10px;
+}
+
+
+/* ===== Tap Instruction ===== */
+.tap-text {
+  color: #7a5a45;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+/* ===== Chocolate Emoji ===== */
+.chocolate {
+  font-size: 110px;
+  cursor: pointer;
+
+  transition: transform 0.3s ease, rotate 0.3s ease;
+}
+
+.chocolate:hover {
+  transform: scale(1.15) rotate(-8deg);
+}
+
+
+/* ===== Message Card ===== */
+.message {
+  margin-top: 20px;
+  background: white;
+
+  padding: 20px;
+  border-radius: 15px;
+
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+/* Hidden state */
+.hidden {
+  display: none;
+}
+
+
+/* ===== Button ===== */
+button {
+  margin-top: 12px;
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #8b4513;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #6b3e26;
+}
+
+
+/* ===== Back Link ===== */
+a {
+  text-decoration: none;
+  color: #6b3e26;
+  font-size: 14px;
+}
