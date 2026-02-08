@@ -1,0 +1,216 @@
+/* ===== Background ===== */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("teddy3.jpg");
+  background-repeat: no-repeat;   /* stops repeating */
+  background-size: cover;        
+  background-position: center;   /* keeps image centered */
+  background-attachment: fixed;
+}
+
+
+/* ===== Layout ===== */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* ===== Title ===== */
+.title {
+  font-size: 2.1rem;
+  color: rgb(75, 37, 8);
+  background-color: #b4998c;
+  padding: 2px;
+  border-radius: 15px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ===== Instruction text ===== */
+.tap-text {
+  margin-bottom: 15px;
+  color: #b4998c;
+  background-color: rgb(75, 37, 8);
+   padding: 2px;
+  border-radius: 15px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ===== Teddy ===== */
+.teddy {
+  font-size: 110px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.teddy:hover {
+  transform: scale(1.1);
+}
+
+/* Hug animation */
+.hug {
+  animation: hugEffect 0.6s ease;
+}
+
+@keyframes hugEffect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1.3); }
+}
+
+
+/* ===== Message Card ===== */
+.message {
+  margin-top: 0px;
+  background: rgb(245, 241, 238);
+  color: #c2185b;
+  padding: 2px;
+  border-radius: 15px;
+
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+
+/* ===== Hearts falling ===== */
+.heart {
+  position: absolute;
+  font-size: 18px;
+  animation: fall 4s linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+/* ===== Photo Layout ===== */
+.photo-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+
+/* Teddy image */
+.teddy {
+  width: 160px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.teddy:hover {
+  transform: scale(1.1);
+}
+
+
+/* Hug zoom */
+.hug {
+  animation: hugEffect 0.6s ease forwards;
+}
+
+
+/* Memory photos */
+.memory {
+  width: 110px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.pop {
+  transform: scale(1.15) rotate(0deg);
+}
+/* ===== Layout ===== */
+.photo-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px; /* YOUR REQUEST */
+  margin-top: 20px;
+}
+
+
+/* Memory boxes */
+.memory-box {
+  text-align: center;
+}
+
+
+/* Bigger photos */
+.memory {
+  width: 220px;              /* bigger */
+  border-radius: 8px;
+
+  /* brown frame */
+  border: 12px solid #8b5e3c;
+  background: #8b5e3c;
+
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+
+  transform: rotate(0deg);   /* straight */
+  transition: transform 0.3s ease;
+  
+}
+/* Captions */
+.caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #c2185b;
+  font-weight: 500;
+  background-color: rgb(245, 241, 238);
+  padding: 2px;
+  border-radius: 15px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/* Teddy */
+.teddy {
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+
+/* Heart burst */
+.burst-heart {
+  position: absolute;
+  font-size: 25px;
+  animation: burst 3s ease forwards;
+}
+
+@keyframes burst {
+  to {
+    transform: translateY(300px) scale(0);
+    opacity: 0;
+  }
+}
+.teddy {
+  transition: transform 0.6s ease;
+}
