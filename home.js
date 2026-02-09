@@ -10,10 +10,11 @@ startBtn.addEventListener("click", () => {
 function unlockDays() {
 
   // 🔥 CHANGE THIS DAILY
-  const unlockedDay = 3; // change to 2 tomorrow, 3 next day...
+  const unlockedDay = 4; // change to 2 tomorrow, 3 next day...
 
   const links = [
     "rose.html",
+    "propose.html",
     "chocolate.html",
     "teddy.html",
     "promise.html",

@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  background-image: url("propose_pg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* ⭐ THIS is the magic */
+  justify-content: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+
+.title {
+  color: #FFF8E7;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  font-size: 3rem;
+
+  /* ⭐ THIS pushes everything else down */
+  position: absolute;
+  top: 25px;
+}
+
+
+.typing {
+  margin-top: 20px;
+  font-size: 18px;
+  min-height: 40px;
+  color: #EADDD0; 
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);  
+  font-weight: 500;
+}
+
+
+button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+.proposal {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 182, 193, 0.75);
+  box-shadow:  0 12px 30px rgba(0,0,0,0.25);
+  opacity: 85%;
+}
+
+.ring {
+  font-size: 70px;
+  margin-bottom: 10px;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+.hidden {
+  display: none;
+}
