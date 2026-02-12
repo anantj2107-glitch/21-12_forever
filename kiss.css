@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+   background-image: url("kiss_pg.jpg");
+  background-size: cover;     
+  background-position: center;  
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Title */
+.title {
+  margin-top: 70px;
+  color: #c2185b;
+  font-size: 3rem;
+}
+
+
+/* Intro */
+.intro {
+  margin-top: 10px;
+  color: #555;
+}
+
+
+/* Envelope */
+.envelope {
+  margin-top: 10px;
+  font-size: 80px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.envelope:hover {
+  transform: scale(1.1);
+}
+
+.tap-text {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #c2185b;
+}
+
+
+/* Letter */
+.letter {
+  margin-top: 20px;
+
+  width: 320px;
+  background: #EC96B2;
+  color: #4B283C;
+
+  padding: 25px;
+  border-radius: 15px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Kiss mark */
+.kiss-mark {
+  font-size: 40px;
+  margin: 15px 0;
+  animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+
+/* Button */
+button {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  background: #DB4A82;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  font-size: 30px;
+  animation: floatUp 3s linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.meaning {
+  margin-top: 20px;
+
+  width: 320px;
+  background: #EC96B2;
+  color: #4B283C;
+
+  padding: 25px;
+  border-radius: 15px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+
+  animation: fadeIn 0.7s ease;
+}
+.kiss-section {
+  display: flex;
+  gap: 100px;
+  margin-top: 20px;
+  align-items: center;
+}
+.meaning.small {
+  width: 320px;
+  padding: 25px;
+  border-radius: 15px;
+  /* font-size: 13px; */
+}
+
